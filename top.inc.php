@@ -1,12 +1,8 @@
 <!-- Заголовок сайта -->
-<!-- <table width="100%" >
+<table width="100%" >
 	<tr>
 		<td class="HeaderImageFon" align="center">
-			<table class="HeaderImageCenter"><tr><td><a href="localhost" target="_self"><div id="HrefHeader"></div></a></td></tr></table>
+			<table class="HeaderImageCenter"><tr><td><a href="http://panchenko.papillon.ru/index.php" target="_self"><div id="HrefHeader"></div></a></td></tr></table>
 		</td>	
 	</tr>
 </table>
--->
-<div class="HeaderImageFon" align="center">
-			<a href="localhost" target="_self"></a>
-</div>	
