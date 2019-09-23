@@ -25,10 +25,11 @@
 	<td>
 		<!-- Меню -->
 		<?php
-			include "menu.inc.php";
+			 include "menu.inc.php";
+			//echo "sfg fdh dfgjfghfd dfhdfh j";
 		?> 
 	</td>
-	<td width=100% >
+	<td>
 		<!-- Область основного контента -->
 		<?php
 			/* проверяем на существование $_GET['id'] */
@@ -70,7 +71,7 @@
 					case 'printbng': include 'content/bangladesh/print.html';break;
 			//		case 'changestur': include 'web2/index.php';break;
 					/* --------------- */
-					default: include 'index.html';
+					default: include 'index1.html';
 					} 
 		?>
 	</td>
