@@ -1,32 +1,10 @@
 /* оформление по умолчанию */
 html,body{
-      margin:1px;
-      padding:0px;
-      height:100%;
-	  width:100%
-      border:1px double black;
-	  font: 16px "Courier New";
-	 }
-/* блок div для перехода на home.papillon.ru */
-#HrefHeader {
-/* outline: 5px solid #000000;  */
-width:180px;
-height:120px;
-display:inline-block;
-margin: 0 0 0 150px;
-}	 
-/* Отступ первой строки в пикселах */
-p {
-    text-indent: 20px; 
-  }
-/* активные ссылки */
-a:link {
-color:#3200FF;
+  margin:1px;
+  padding:0px;
+  font: 16px "Courier New";
 }
-/* неактивные ссылки */
-a:visited {
-color:#3200FF;
-}
+
 /* фон в заголовке */
 .HeaderImageFon{
  background-image: url('../images/bgtop.gif');
@@ -47,76 +25,127 @@ color:#3200FF;
  margin: 0 auto;
  padding: 0 0 0 0;
  }
-/* оформление меню заголовка временно отключено  */  
-.HeaderMenu{
- border-collapse: collapse;
- background-color: #B8B8B8;
- border: 3px black;
- width:100%;
-}
-/* Стиль заголовков */
- h3 {
-font:italic bold 18px "Times New Roman";
-} 
-/* стиль общего списка с пустым кругом */
-ul {
-list-style-type: circle;
-}
+
+/* блок div для перехода на home.papillon.ru */
+#HrefHeader {
+  /* outline: 5px solid #000000;  */
+  width:180px;
+  height:120px;
+  display:inline-block;
+  margin: 0 0 0 150px;
+  }	 
+  /* Отступ первой строки в пикселах */
+  p {
+      text-indent: 20px; 
+    }
+  /* активные ссылки */
+  a:link {
+  color:#3200FF;
+  }
+  /* неактивные ссылки */
+  a:visited {
+  color:#3200FF;
+  }
+  
+
+/* фон в заголовке */
+.HeaderImageFon{
+  background-image: url('../images/bgtop.gif');
+  background-repeat:repeat-x;
+  border: 1px solid #36B9F0;
+  width:100%;
+  height:152px;
+  margin: 115px auto;
+ }
+ 
+
 /* Общий стиль всей таблицы */
 table {
  width:100%;
  text-align: left;
- 
+ border: 3px solid blue;
 }
 /* Общий стиль выравнеивание данных в ячейке */
 td {
  vertical-align: top; 
+ border: 3px solid gold;
 }
-/* стиль списка с изображеним стрелки */
+
+tr {
+  vertical-align: top; 
+  border: 3px solid black;
+ }
+
+ /* стиль списка с изображеним стрелки */
 .ulImg {
- list-style-image: url('../images/arr_2.gif');
- font: 12px/17px "Tahoma";
- width:160px;
-}
-/* стиль списка с изображеним списка */
+  list-style-image: url('../images/arr_2.gif');
+  font: 12px/17px "Tahoma";
+  width:160px;
+ }
+ /* стиль списка с изображеним списка */
 .ulImg2 {
- list-style-image: url('../images/len.gif');
- font: 12px/14px "Tahoma";
- width:120px;
-}
-/* стиль списка с изображеним мяча */
-.ulImg3 {
- list-style-image: url('../images/boll.gif');
- font: 12px/14px "Tahoma";
- width:120px;
-}
-/* линии по левому и правому краю в основной таблице */
+  list-style-image: url('../images/len.gif');
+  font: 12px/14px "Tahoma";
+  width:120px;
+ }
+ /* стиль списка с изображеним мяча */
+ .ulImg3 {
+  list-style-image: url('../images/boll.gif');
+  font: 12px/14px "Tahoma";
+  width:120px;
+ }
+
+ 
+
+
+
+
+
+
+
+
+
+
+ /* оформление меню заголовка временно отключено  */  
+.HeaderMenu{
+  border-collapse: collapse;
+  background-color: #B8B8B8;
+  border: 3px black;
+  width:100%;
+ }
+ /* Стиль заголовков */
+  h3 {
+ font:italic bold 18px "Times New Roman";
+ } 
+ 
+
+ /* линии по левому и правому краю в основной таблице */
 .line {
-    border-left: 1px solid #E6F6FE; /* Линия слева от текста */ 
-    border-right: 2px solid #E6F6FE; /* Линия справа от текста */
-    padding: 0 5px;  /* Расстояние между линией и текстом */
-    margin: 0 5%; /* Отступы от края до линии */
-   }
+  border-left: 1px solid #E6F6FE; /* Линия слева от текста */ 
+  border-right: 2px solid #E6F6FE; /* Линия справа от текста */
+  padding: 0 5px;  /* Расстояние между линией и текстом */
+  margin: 0 5%; /* Отступы от края до линии */
+ }
 /* форматирование общего списка меню */
 .lineIL {
-    margin-left: -10px; /* Отступ слева */
-   }  
+  margin-left: -10px; /* Отступ слева */
+ }  
 .TblMenu {
 /*  outline: 2px solid #1E4FFF; */
- background-color: #D6E8EF;
+background-color: #D6E8EF;
 /*  background-image: url('../images/logo_2.gif'); */
- /* border-collapse: collapse;
- border: 0px white; */
+/* border-collapse: collapse;
+border: 0px white; */
 /*  width:45px;
- height:152px;
- margin: 0 auto;
- padding: 0 0 0 0; */
- }   
+height:152px;
+margin: 0 auto;
+padding: 0 0 0 0; */
+}   
 /* last date of Changes */   
 .font_smool {
- font: 9px "Courier New";
+font: 9px "Courier New";
 }
 /* правила hotline - текст */
 .font_average {
- font: italic 14px "Courier New";
+font: italic 14px "Courier New";
 }
