@@ -39,7 +39,7 @@
 				$id = trim(strip_tags($_GET['id']));
 					switch($id){
 					case 'prefix': include "content/ppln/prefix.html";break;
-					default: include 'index1.html';
+					default: include 'index.html';
 					} 
 		?>
 	</td>
