@@ -1,4 +1,4 @@
-<?php header('refresh: 10'); ?>
+<!-- // <?php //header('refresh: 30'); ?> -->
 <?php
 	include "lib.inc.php";
 ?>
@@ -40,7 +40,7 @@
 				$id = trim(strip_tags($_GET['id']));
 					switch($id){
 					case 'prefix': include "content/ppln/prefix.html";break;
-					default: include 'index.html';
+					default: include 'index5.html';
 					} 
 		?>
 	</td>

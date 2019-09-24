@@ -1,0 +1,29 @@
+<?php header('refresh: 5'); ?>
+<?php
+$json_string = 'https://ipnetcat.ddns.net:28443/json.htm?username=YWxleA==&password=MDkxMDc3QWxlWA==&type=devices&rid=33';
+$jsondata = file_get_contents($json_string);
+$obj = json_decode($jsondata,true);
+//echo "<pre>";
+//print_r($obj);
+
+//$resjson_string=($obj["result"]);
+//$resdata = file_get_contents($resjson_string[0]);
+//print_r($obj["result"][0][HardwareType]);
+//$res = json_decode($resdata,true);
+//echo "<br>";
+//print_r($obj["Total"]);"<br>";
+?>
+
+<html>
+
+<div>
+<p>status = <?=$obj["status"];?></p>
+<p>ServerTime = <?=$obj["ServerTime"];?></p>
+<p>HardwareType = <?=$obj["result"][0][HardwareType];?></p>
+<p>LastUpdate = <?=$obj["result"][0][LastUpdate];?></p>
+<p>Temp = <?=$obj["result"][0][Temp];?></p>
+
+</div>
+<input type="button" value="Обновить страницу" onClick="window.location.reload()">
+
+</html>
