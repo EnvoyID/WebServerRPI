@@ -1,3 +1,4 @@
+<?php header('refresh: 10'); ?>
 <?php
 	include "lib.inc.php";
 ?>

@@ -1,4 +1,4 @@
-<!-- Все функции -->
+<!--  -->
 <?php
 	function getMenu($menu, $vertical=true){
 		if(!$vertical){
