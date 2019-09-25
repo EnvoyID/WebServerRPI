@@ -23,7 +23,7 @@
 </tr>
 
 <tr>
-	<td>
+	<td class="include_menu">
 		<!-- Меню -->
 		<?php
 			 include "menu.inc.php";

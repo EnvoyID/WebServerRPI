@@ -70,6 +70,14 @@ td {
   /* border: 3px solid gold; */
   }
 
+.include_menu {
+  /* vertical-align: top; */
+  /* border: 3px solid gold; */
+  width: 1px;
+  border: 3px solid rgb(204, 5, 5);
+
+  }  
+
 tr {
   vertical-align: top; 
   /* border: 3px solid black; */
