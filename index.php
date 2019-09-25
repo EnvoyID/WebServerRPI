@@ -22,7 +22,7 @@
 	</td>
 </tr>
 
-<tr>
+<tr> 
 	<td class="include_menu">
 		<!-- Меню -->
 		<?php
