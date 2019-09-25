@@ -19,7 +19,7 @@ html,body{
  height:152px;
  margin: 115px auto; */
 }
-/* рисунок в центре заголовка */
+/* рисунок в заголовка */
 .HeaderImageCenter {
 /*  outline: 2px solid #1E4FFF; */
  background-image: url('../images/img_header.gif');
@@ -39,8 +39,9 @@ html,body{
   /* outline: 5px solid #000000;  */
   width:180px;
   height:120px;
-  display:inline-block;
+ /* display:inline-block;
   margin: 0 0 0 150px;
+  */
   }	 
 
  /* Отступ первой строки в пикселах */
@@ -73,37 +74,41 @@ td {
 .include_menu {
   /* vertical-align: top; */
   /* border: 3px solid gold; */
-  width: 1px;
-  border: 3px solid rgb(204, 5, 5);
-
+  width: 160px;
+/*  border: 3px solid rgb(204, 5, 5); */
   }  
 
 tr {
-  vertical-align: top; 
+  /* vertical-align: top; */
   /* border: 3px solid black; */
  }
 
  /* стиль списка с изображеним стрелки */
-.ulImg {
-  list-style-image: url('../images/arr_2.gif');
-  font: 12px/17px "Tahoma";
-  width:160px;
+ .ulImg {
+  list-style-image: url('../images/arr_2.gif'); 
+  font-size: 15px;
+  font: "Tahoma"; 
+  /* width:160px; 
  }
- /* стиль списка с изображеним списка */
-.ulImg2 {
+
+
+ /* стиль списка с изображеним списка 
+ .ulImg2 {
   list-style-image: url('../images/len.gif');
   font: 12px/14px "Tahoma";
   width:120px;
  }
- /* стиль списка с изображеним мяча */
+ */
+ /* стиль списка с изображеним мяча 
  .ulImg3 {
   list-style-image: url('../images/boll.gif');
   font: 12px/14px "Tahoma";
   width:120px;
  }
+ */
 
-/* форматирование общего списка меню */
+/* форматирование общего списка меню 
 .lineIL {
-  margin-left: 0px; /* Отступ слева */
+  margin-left: 0px; /* Отступ слева 
  }  
-
+ */

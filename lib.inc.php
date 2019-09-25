@@ -2,7 +2,7 @@
 <?php
 	function getMenu($menu, $vertical=true){
 		if(!$vertical){
-			$style = "display:inline";
+//			$style = "display:inline";
 		}
 		echo '<ul class="ulImg">';
 			foreach ($menu as $link=>$href){

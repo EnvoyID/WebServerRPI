@@ -1,3 +1,6 @@
+<?php
+  include "statistic/stat.php";
+?>
 <!-- // <?php //header('refresh: 30'); ?> -->
 <?php
 	include "lib.inc.php";
@@ -40,6 +43,7 @@
 				$id = trim(strip_tags($_GET['id']));
 					switch($id){
 					case 'prefix': include "content/ppln/prefix.html";break;
+					case 'item3': include "statistic/seestats.php";break;
 					default: include 'index_test.html';
 					} 
 		?>
