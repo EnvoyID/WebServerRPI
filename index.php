@@ -44,7 +44,7 @@
 					switch($id){
 					case 'prefix': include "content/ppln/prefix.html";break;
 					case 'item3': include "statistic/seestats.php";break;
-					default: include 'index_test.html';
+					default: include 'main_index.html';
 					} 
 		?>
 	</td>
