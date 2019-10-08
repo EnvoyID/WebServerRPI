@@ -2,6 +2,7 @@
 header('Content-Type: application/json; charset=UTF-8');
 $json_string = 'https://ipnetcat.ddns.net:28443/json.htm?username=Z2V0ZGF0YQ==&password=Z2V0ZGF0YQ==&type=devices&rid=33';
 $jsondata = file_get_contents($json_string);
+
 $obj = json_decode($jsondata,true);
 //print_r($obj);
 

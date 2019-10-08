@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ajax demo</title>
+</head>
+<body>
+
+<div style="border:1px sienna solid">
+    <span id="HardwareType">Тип иследуемого сенсора: </span>
+    <br />
+    <span id="ServerTime">Системное время: </span>
+    <br />
+    <span id="LastUpdate">Последнее обновление: </span>
+    <br />
+    <span id="Temp">Температура: </span>
+</div>
+
+
+
+<script type="text/javascript">
+var timer = null;
+
+var limit = 60;
+var c = 0;
+
+/**
+Каждые 5 сек будет вызываться анонимная функция и обновлять данные, которые возвращает data.php
+*/
+timer = setInterval(
+    function() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'get_data/get_data_ups.php');
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                var data = JSON.parse(xhr.responseText);
+                document.getElementById('HardwareType').innerHTML = "Тип иследуемого сенсора: " + data.get_HardwareType + "";
+                document.getElementById('ServerTime').innerHTML =   "Системное время:         " + data.get_ServerTime + "";
+                document.getElementById('LastUpdate').innerHTML =   "Последнее обновление:    " + data.get_LastUpdate + "";
+                document.getElementById('Temp').innerHTML =         "Температура:             " + data.get_Temp + " градусов";
+            }
+            else {
+                alert('Request failed.  Returned status of ' + xhr.status);
+            }
+        };
+        xhr.send();
+        // по достижении limit сброс таймера
+        if (c  == limit) {
+            clearInterval(timer);
+        }
+        c++;
+        
+    },
+    1000
+);
+
+
+</script>
+
+</body>
+</html>

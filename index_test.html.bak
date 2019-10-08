@@ -28,8 +28,8 @@
 <script type="text/javascript">
 var timer = null;
 
-var limit = 10;
-var c = 3;
+var limit = 60;
+var c = 0;
 
 /**
 Каждые 5 сек будет вызываться анонимная функция и обновлять данные, которые возвращает data.php
@@ -58,79 +58,41 @@ timer = setInterval(
         c++;
         
     },
-    3000
+    1000
 );
 
-</script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-    var timer = null;
-    
-    var limit = 10;
-    var c = 5;
-    
-    /**
-    Каждые 5 сек будет вызываться анонимная функция и обновлять данные, которые возвращает data.php
-    */
-    timer = setInterval(
-        function() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'get_data/get_data_ups.php');
-            xhr.onload = function() {
-                if (xhr.status === 200) {
-                    var data = JSON.parse(xhr.responseText);
-                    document.getElementById('Battery').innerHTML = "Battery: " + data.get_Battery + "";
-                    document.getElementById('Voltage').innerHTML = "Voltage: " + data.get_Voltage + "";
-                }
-                else {
-                    alert('Request failed.  Returned status of ' + xhr.status);
-                }
-            };
-            xhr.send();
-            // по достижении limit сброс таймера
-            if (c  == limit) {
-                clearInterval(timer);
+/**
+Каждые 5 сек будет вызываться анонимная функция и обновлять данные, которые возвращает data.php
+*/
+timer = setInterval(
+    function() {
+        var xhr2 = new XMLHttpRequest();
+        xhr2.open('GET', 'get_data/get_data_ups.php');
+        xhr2.onload = function() {
+            if (xhr2.status === 200) {
+                var data2 = JSON.parse(xhr2.responseText);
+                document.getElementById('Battery').innerHTML = "Battery: " + data.get_Battery + "";
+                document.getElementById('Voltage').innerHTML = "Voltage: " + data.get_Voltage + "";
             }
-            c++;
-            
-        },
-        1000
-    );
-    
-    
-    
-
-    
-    </script>
-
-
-
-
-
+            else {
+                alert('Request failed.  Returned status of ' + xhr2.status);
+            }
+        };
+        xhr2.send();
+        // по достижении limit сброс таймера
+        if (c  == limit) {
+            clearInterval(timer);
+        }
+        c++;
+        
+    },
+    1000
+);
 
 
-
+</script>
 
 </body>
 </html>

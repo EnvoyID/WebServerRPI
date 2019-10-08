@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ajax demo</title>
+</head>
+<body>
+
+<div style="border:1px rgb(15, 36, 226) solid">
+    <span id="Battery">Battery: 0</span>
+    <br />
+    <span id="Voltage">Voltage: 0</span>
+    <br />
+</div>
+
+<div style="border:1px sienna solid">
+    <span id="HardwareType">Тип сенсора: </span>
+    <br />
+    <span id="ServerTime">Системное время: </span>
+    <br />
+    <span id="LastUpdate">Последнее обновление: </span>
+    <br />
+    <span id="Temp">Температура: </span>
+    <br />
+</div>
+
+
+
+<script type="text/javascript">
+    var xhr1 = new XMLHttpRequest();
+    xhr1.open('GET', 'get_data/get_data_ups.php');
+    xhr1.onload = function() {
+            var data = JSON.parse(xhr1.responseText);
+            document.getElementById('Battery').innerHTML = "Тип сенсора: " + data.get_Battery + "";
+            document.getElementById('Voltage').innerHTML =   "Системное время:         " + data.get_Voltage + "";
+    };
+    xhr1.send();
+</script>
+
+
+<script type="text/javascript">
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'get_data/get_data_rpi.php');
+    xhr.onload = function() {
+            var data = JSON.parse(xhr.responseText);
+            document.getElementById('HardwareType').innerHTML = "Тип сенсора: " + data.get_HardwareType + "";
+            document.getElementById('ServerTime').innerHTML =   "Системное время:         " + data.get_ServerTime + "";
+            document.getElementById('LastUpdate').innerHTML =   "Последнее обновление:    " + data.get_LastUpdate + "";
+            document.getElementById('Temp').innerHTML =         "Температура:             " + data.get_Temp + " градусов";
+    };
+    xhr.send();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
